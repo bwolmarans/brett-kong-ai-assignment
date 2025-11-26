@@ -1,0 +1,7 @@
+# I had to modify port 8443 in the quickstart script to something else because of the following error:
+# docker: Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint kong-quickstart-gateway (505d8d38434db360d0c91a650153093856de816e94f7ddd3cf1df430afcea95d): Bind for 0.0.0.0:8443 failed: port is already allocated
+
+export KONNECT_TOKEN=<your token from KONNECT admin portal>
+source deck_container_alias_command.sh
+deck gateway ping
+
