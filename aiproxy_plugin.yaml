@@ -1,0 +1,9 @@
+
+_format_version: "3.0"
+plugins:
+  - name: ai-proxy
+    config:
+      route_type: llm/v1/chat
+      model:
+        provider: openai
+

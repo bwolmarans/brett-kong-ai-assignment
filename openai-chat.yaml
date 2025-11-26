@@ -1,0 +1,7 @@
+_format_version: "3.0"
+routes:
+  - name: openai-chat
+    service:
+      name: llm-service
+    paths:
+    - "/chat"
