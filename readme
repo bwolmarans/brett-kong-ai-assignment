@@ -20,7 +20,8 @@ curl -X POST "$KONNECT_PROXY_URL/chat" \
            "content": "Say this is a test!"
          }
        ]
-     }
+     }'
+
 
 
 
