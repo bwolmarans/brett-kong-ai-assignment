@@ -19,8 +19,43 @@ curl -X POST "$KONNECT_PROXY_URL/chat" \
            "role": "user",
            "content": "Say this is a test!"
          }
-       ]
+       ]h 
      }'
+
+for i in {1..10}; do source curl_test_aigw.sh; done 
+
+to send a POST in Chrome dev tools do this:
+
+const OPENAI_KEY=<'your openai key here'>;
+
+fetch('http://52.206.9.54:8000/chat', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json', // Or 'application/x-www-form-urlencoded' depending on your API
+        'Authorization': 'Bearer YOUR_AUTH_TOKEN' // If authentication is required
+    },
+    body: JSON.stringify({ // Stringify the body for JSON content-type
+       "model": "gpt-4",
+       "messages": [
+         {
+           "role": "user",
+           "content": "Say this is a test!"
+         }
+       ]
+    })
+})
+.then(response => {
+    if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.json(); // Or response.text() if the response is not JSON
+})
+.then(data => {
+    console.log('Success:', data);
+})
+.catch(error => {
+    console.error('Error:', error);
+});
 
 
 
