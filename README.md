@@ -1,6 +1,6 @@
 # KONG AI ASSIGNMENT
 
-export OPENAI_KEY=<your OpenAI key>
+`export OPENAI_KEY=<your OpenAI key>
 export KONNECT_TOKEN=<your token from KONNECT admin portal>
 source deck_container_alias_command.sh
 deck gateway ping
@@ -23,10 +23,10 @@ curl -X POST "$KONNECT_PROXY_URL/chat" \
      }'
 
 for i in {1..10}; do source curl_test_aigw.sh; done 
+`
+## To send a POST in Chrome dev tools, open a new tab, browse to http://52.206.9.54:8000 and then do this:
 
-to send a POST in Chrome dev tools, open a new tab, browse to http://52.206.9.54:8000 and then do this:
-
-const OPENAI_KEY = <'your openai key here'>;
+`const OPENAI_KEY = <'your openai key here'>;
 const headers = new Headers();
 headers.append('Authorization', `Bearer ${OPENAI_KEY}`)
 headers.append('Content-Type', 'application/json');
@@ -56,10 +56,10 @@ fetch('http://52.206.9.54:8000/chat', {
 .catch(error => {
     console.error('Error:', error);
 });
+`
 
 
-
-### here is calling Claude
+## To call Claude
 
 curl https://api.anthropic.com/v1/messages \
   -H "content-type: application/json" \
