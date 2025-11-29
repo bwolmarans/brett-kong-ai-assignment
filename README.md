@@ -110,3 +110,7 @@ curl -X POST https://kong-f40972acc5us3jemn.kongcloud.dev/api/v1 \
 
 ```
 
+
+https://github.com/user-attachments/assets/b47682a6-fe11-4c20-ad2c-30adef042288
+
+
