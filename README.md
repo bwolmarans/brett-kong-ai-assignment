@@ -1,5 +1,10 @@
 # KONG AI ASSIGNMENT
 
+## Part 1: Using quickstart script to run remote data-plane node
+## Part 2: Entirely in Konnect using AiGw flow
+
+### Part 1 - Quickstart
+
 ```
 export OPENAI_KEY=<your OpenAI key>
 export KONNECT_TOKEN=<your token from KONNECT admin portal>
@@ -30,7 +35,27 @@ for i in {1..10}; do source curl_test_aigw.sh; done
 Uploading kong_remote_aigw - Made with Clipchamp.mp4…
 
 
-## To send a POST in Chrome dev tools, open a new tab, browse to http://52.206.9.54:8000
+
+
+## Part 2 - To call AI Gateway datapath in Konnect 
+### ( This is different and not the AI GW  running in my EC2 instance )
+```
+curl -X POST https://kong-f40972acc5us3jemn.kongcloud.dev/api/v1 \
+-H 'Content-Type: application/json' -d '{
+  "messages": [
+    {
+      "role": "user",
+      "content": "How does Kong AI Gateway work?"
+    }
+  ]
+}'
+
+```
+
+
+https://github.com/user-attachments/assets/b47682a6-fe11-4c20-ad2c-30adef042288
+
+## Debug Notes: To send a POST in Chrome dev tools, open a new tab, browse to http://52.206.9.54:8000
 
 ### Ignore any errors, and then just a little bit of Javascript, nothing to be afraid of:
 
@@ -98,23 +123,3 @@ curl https://api.openai.com/v1/chat/completions \
       }'
 
 ```
-
-## To call AI Gateway datapath in Konnect 
-### ( This is different and not the AI GW  running in my EC2 instance )
-```
-curl -X POST https://kong-f40972acc5us3jemn.kongcloud.dev/api/v1 \
--H 'Content-Type: application/json' -d '{
-  "messages": [
-    {
-      "role": "user",
-      "content": "How does Kong AI Gateway work?"
-    }
-  ]
-}'
-
-```
-
-
-https://github.com/user-attachments/assets/b47682a6-fe11-4c20-ad2c-30adef042288
-
-
