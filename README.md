@@ -62,7 +62,7 @@ fetch('http://52.206.9.54:8000/chat', {
     console.error('Error:', error);
 });
 ```
-## To call Claude
+## To call Claude directly
 
 ```
 curl https://api.anthropic.com/v1/messages \
@@ -79,6 +79,20 @@ curl https://api.anthropic.com/v1/messages \
       }
     ]
   }'
+```
+## to call OpenAI Directly
+
+```
+curl https://api.openai.com/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $OPENAI_API_KEY" \
+  -d '{
+        "model": "gpt-4.1",
+        "messages": [
+          { "role": "user", "content": "Hello!" }
+        ]
+      }'
+
 ```
 
 ## To call AI Gateway datapath in Konnect 
