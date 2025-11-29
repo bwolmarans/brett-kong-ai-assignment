@@ -1,9 +1,9 @@
 # KONG AI ASSIGNMENT
 
-## Part 1: Using quickstart script to run remote data-plane node
-## Part 2: Entirely in Konnect using AiGw flow
+## Part 1: Using quickstart script remote data-plane to single LLM
+## Part 2: Konnect AiGw flow to LB between two different LLM's
 
-### Part 1 - Quickstart
+### Part 1 - Quickstart - remote data-plane
 
 ```
 export OPENAI_KEY=<your OpenAI key>
@@ -37,7 +37,7 @@ https://github.com/user-attachments/assets/5fd10ac7-5962-4767-a4dd-72d66579dd63
 
 
 
-## Part 2 - To call AI Gateway datapath in Konnect 
+## Part 2 - To call AI Gateway in Konnect (no remote node)
 ### ( This is different and not the AI GW  running in my EC2 instance )
 ```
 curl -X POST https://kong-f40972acc5us3jemn.kongcloud.dev/api/v1 \
