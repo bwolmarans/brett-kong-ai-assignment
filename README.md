@@ -26,7 +26,9 @@ curl -X POST "$KONNECT_PROXY_URL/chat" \
 for i in {1..10}; do source curl_test_aigw.sh; done 
 ```
 
-## To send a POST in Chrome dev tools, open a new tab, browse to http://52.206.9.54:8000 and then do this:
+## To send a POST in Chrome dev tools, open a new tab, browse to http://52.206.9.54:8000
+
+### Ignore any errors, and then just a little bit of Javascript, nothing to be afraid of:
 
 ```
 const OPENAI_KEY = <'your openai key here'>;
