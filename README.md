@@ -39,7 +39,8 @@ https://github.com/user-attachments/assets/5fd10ac7-5962-4767-a4dd-72d66579dd63
 
 
 ## Part 2 - To call AI Gateway in Konnect (no remote node)
-### ( This is different and not the AI GW  running in my EC2 instance )
+<img width="709" height="289" alt="Screenshot 2025-11-28 225827" src="https://github.com/user-attachments/assets/caf3979e-c8d8-485b-ba8c-093b951cd3ae" />
+
 ```
 curl -X POST https://kong-f40972acc5us3jemn.kongcloud.dev/api/v1 \
 -H 'Content-Type: application/json' -d '{
