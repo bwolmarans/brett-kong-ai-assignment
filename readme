@@ -1,3 +1,5 @@
+# KONG AI ASSIGNMENT
+
 export OPENAI_KEY=<your OpenAI key>
 export KONNECT_TOKEN=<your token from KONNECT admin portal>
 source deck_container_alias_command.sh
