@@ -32,8 +32,8 @@ for i in {1..10}; do source curl_test_aigw.sh; done
 ```
 
 
-Uploading kong_remote_aigw - Made with Clipchamp.mp4…
 
+https://github.com/user-attachments/assets/5fd10ac7-5962-4767-a4dd-72d66579dd63
 
 
 
