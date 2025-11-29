@@ -4,6 +4,7 @@
 ## Part 2: Konnect AiGw flow to LB between two different LLM's
 
 ### Part 1 - Quickstart - remote data-plane
+<img width="1228" height="644" alt="Screenshot 2025-11-28 225632" src="https://github.com/user-attachments/assets/95dfc84e-fe37-46fd-8929-de584d482f63" />
 
 ```
 export OPENAI_KEY=<your OpenAI key>
