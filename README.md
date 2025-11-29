@@ -84,12 +84,15 @@ curl https://api.anthropic.com/v1/messages \
 ## To call AI Gateway datapath in Konnect 
 ### ( This is different and not the AI GW  running in my EC2 instance )
 ```
-curl -X POST https://kong-f40972acc5us3jemn.kongcloud.dev/api/v1 -H 'Content-Type: application/json' -d '{
+curl -X POST https://kong-f40972acc5us3jemn.kongcloud.dev/api/v1 \
+-H 'Content-Type: application/json' -d '{
   "messages": [
     {
       "role": "user",
       "content": "How does Kong AI Gateway work?"
-    }'
+    }
+  ]
+}'
 
 ```
 
