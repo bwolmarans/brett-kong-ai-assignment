@@ -89,6 +89,7 @@ curl -X POST https://kong-f40972acc5us3jemn.kongcloud.dev/api/v1 -H 'Content-Typ
     {
       "role": "user",
       "content": "How does Kong AI Gateway work?"
-    }
+    }'
+
 ```
 
