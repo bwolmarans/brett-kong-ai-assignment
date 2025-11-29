@@ -57,4 +57,21 @@ fetch('http://52.206.9.54:8000/chat', {
 
 
 
+### here is calling Claude
+
+curl https://api.anthropic.com/v1/messages \
+  -H "content-type: application/json" \
+  -H "x-api-key: $ANTHROPIC_API_KEY" \
+  -H "anthropic-version: 2023-06-01" \
+  -d '{
+    "model": "claude-sonnet-4-0",
+    "max_tokens": 1024,
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hello, Claude!"
+      }
+    ]
+  }'
+
 
