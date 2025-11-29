@@ -20,7 +20,7 @@ curl -X POST "$KONNECT_PROXY_URL/chat" \
            "role": "user",
            "content": "Say this is a test!"
          }
-       ]h 
+       ]
      }'
 
 for i in {1..10}; do source curl_test_aigw.sh; done 
