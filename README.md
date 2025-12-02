@@ -14,7 +14,8 @@ source konnect_aigw_envars.sh
 deck gateway ping
 source kong-konnect-aigw-quickstart.sh
 
-<img width="300" height="175" alt="image" src="https://github.com/user-attachments/assets/b23faa2d-eaee-474f-b687-0039b5298dd1" />
+
+<img width="1224" height="710" alt="image" src="https://github.com/user-attachments/assets/a7679b01-aa3e-40d9-8bd8-8dd4d9d6da9c" />
 
 deck gateway apply llm_service.yaml
 deck gateway apply openai-chat.yaml
