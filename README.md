@@ -15,8 +15,12 @@ deck gateway ping
 source kong-konnect-aigw-quickstart.sh
 
 
-<img width="1224" height="710" alt="image" src="https://github.com/user-attachments/assets/a7679b01-aa3e-40d9-8bd8-8dd4d9d6da9c" />
+```
+### add a dataplane node
+<img width="304" height="175" alt="image" src="https://github.com/user-attachments/assets/a7679b01-aa3e-40d9-8bd8-8dd4d9d6da9c" />
 
+### apply LLM services
+```
 deck gateway apply llm_service.yaml
 deck gateway apply openai-chat.yaml
 deck gateway apply aiproxy_plugin.yaml
