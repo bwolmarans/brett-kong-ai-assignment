@@ -24,7 +24,9 @@ source kong-konnect-aigw-quickstart.sh
 deck gateway apply llm_service.yaml
 deck gateway apply openai-chat.yaml
 deck gateway apply aiproxy_plugin.yaml
-
+```
+### test
+```
 curl -X POST "$KONNECT_PROXY_URL/chat" \
      -H "Accept: application/json"\
      -H "Content-Type: application/json"\
