@@ -12,6 +12,7 @@ export KONNECT_TOKEN=<your token from KONNECT admin portal>
 source deck_container_alias_command.sh
 source konnect_aigw_envars.sh
 deck gateway ping
+source kong-konnect-aigw-quickstart.sh
 deck gateway apply llm_service.yaml
 deck gateway apply openai-chat.yaml
 deck gateway apply aiproxy_plugin.yaml
